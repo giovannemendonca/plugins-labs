@@ -22,15 +22,19 @@ plugins/
     skills/
       commit-message/SKILL.md     # skill: gera mensagens de commit
       code-review/SKILL.md        # skill: revisa o diff em busca de bugs
+    commands/
+      pr-description.md           # comando: /pr-description
 ```
 
 ## Plugins
 
-- **mendonca-solucoes** — skills de desenvolvimento do dia a dia:
-  - `commit-message`: gera mensagens de commit no padrão Conventional Commits a
-    partir do `git diff` atual.
-  - `code-review`: revisa o `git diff` atual em busca de bugs e problemas de
-    corretude (não é revisão de estilo).
+- **mendonca-solucoes** — skills e comandos de desenvolvimento do dia a dia:
+  - `commit-message` (skill): gera mensagens de commit no padrão Conventional
+    Commits a partir do `git diff` atual.
+  - `code-review` (skill): revisa o `git diff` atual em busca de bugs e
+    problemas de corretude (não é revisão de estilo).
+  - `/pr-description` (command): gera a descrição de um PR (summary + test
+    plan) a partir do diff entre a branch atual e a base.
 
 ## Criar um novo plugin
 
