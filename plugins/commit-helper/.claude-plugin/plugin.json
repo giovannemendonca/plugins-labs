@@ -1,9 +1,0 @@
-{
-  "name": "commit-helper",
-  "description": "Skills para ajudar a escrever mensagens de commit consistentes.",
-  "version": "0.1.0",
-  "author": {
-    "name": "Giovanne Mendonca",
-    "email": "giovannemendonca@gmail.com"
-  }
-}
