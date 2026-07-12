@@ -3,6 +3,9 @@
 Meus plugins do Claude Code — skills organizadas, versionadas e instaláveis via
 marketplace neste repositório.
 
+Para decidir entre skill, command, hook, agent, MCP server ou CLAUDE.md ao
+criar algo novo, veja [GUIA.md](GUIA.md).
+
 ## Instalar
 
 No Claude Code:
