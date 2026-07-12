@@ -27,11 +27,14 @@ plugins/
     hooks/
       hooks.json                  # registro do hook PreToolUse
       pre-commit-reminder.sh      # script: lembrete antes de git commit
+    agents/
+      qa-tester.md                # agent: testa endpoints via curl
 ```
 
 ## Plugins
 
-- **mendonca-solucoes** — skills, comandos e hooks de desenvolvimento do dia a dia:
+- **mendonca-solucoes** — skills, comandos, hooks e agents de desenvolvimento do
+  dia a dia:
   - `commit-message` (skill): gera mensagens de commit no padrão Conventional
     Commits a partir do `git diff` atual.
   - `code-review` (skill): revisa o `git diff` atual em busca de bugs e
@@ -41,6 +44,8 @@ plugins/
   - `pre-commit-reminder` (hook, PreToolUse/Bash): mostra um lembrete
     (testes? diff revisado? mensagem no padrão?) antes de qualquer comando
     `git commit`, sem bloquear a execução.
+  - `qa-tester` (agent): testa endpoints de uma API rodando localmente via
+    curl, sem acesso a Edit/Write — só observa e reporta, nunca corrige.
 
 ## Criar um novo plugin
 
