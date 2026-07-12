@@ -24,17 +24,23 @@ plugins/
       code-review/SKILL.md        # skill: revisa o diff em busca de bugs
     commands/
       pr-description.md           # comando: /pr-description
+    hooks/
+      hooks.json                  # registro do hook PreToolUse
+      pre-commit-reminder.sh      # script: lembrete antes de git commit
 ```
 
 ## Plugins
 
-- **mendonca-solucoes** — skills e comandos de desenvolvimento do dia a dia:
+- **mendonca-solucoes** — skills, comandos e hooks de desenvolvimento do dia a dia:
   - `commit-message` (skill): gera mensagens de commit no padrão Conventional
     Commits a partir do `git diff` atual.
   - `code-review` (skill): revisa o `git diff` atual em busca de bugs e
     problemas de corretude (não é revisão de estilo).
   - `/pr-description` (command): gera a descrição de um PR (summary + test
     plan) a partir do diff entre a branch atual e a base.
+  - `pre-commit-reminder` (hook, PreToolUse/Bash): mostra um lembrete
+    (testes? diff revisado? mensagem no padrão?) antes de qualquer comando
+    `git commit`, sem bloquear a execução.
 
 ## Criar um novo plugin
 
