@@ -9,7 +9,7 @@ No Claude Code:
 
 ```
 /plugin marketplace add giovannemendonca/plugins-labs
-/plugin install commit-helper@giovanne-plugins
+/plugin install mendonca-solucoes@giovanne-plugins
 ```
 
 ## Estrutura
@@ -17,16 +17,20 @@ No Claude Code:
 ```
 .claude-plugin/marketplace.json   # índice dos plugins deste repositório
 plugins/
-  commit-helper/
+  mendonca-solucoes/
     .claude-plugin/plugin.json    # manifesto do plugin
     skills/
       commit-message/SKILL.md     # skill: gera mensagens de commit
+      code-review/SKILL.md        # skill: revisa o diff em busca de bugs
 ```
 
 ## Plugins
 
-- **commit-helper** — gera mensagens de commit no padrão Conventional Commits a
-  partir do `git diff` atual.
+- **mendonca-solucoes** — skills de desenvolvimento do dia a dia:
+  - `commit-message`: gera mensagens de commit no padrão Conventional Commits a
+    partir do `git diff` atual.
+  - `code-review`: revisa o `git diff` atual em busca de bugs e problemas de
+    corretude (não é revisão de estilo).
 
 ## Criar um novo plugin
 

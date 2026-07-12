@@ -6,9 +6,9 @@
   },
   "plugins": [
     {
-      "name": "commit-helper",
-      "source": "./plugins/commit-helper",
-      "description": "Skills para ajudar a escrever mensagens de commit consistentes."
+      "name": "mendonca-solucoes",
+      "source": "./plugins/mendonca-solucoes",
+      "description": "Skills de desenvolvimento do dia a dia: mensagens de commit, code review e outras."
     }
   ]
 }
