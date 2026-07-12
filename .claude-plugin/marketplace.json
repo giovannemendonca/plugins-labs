@@ -1,0 +1,14 @@
+{
+  "name": "giovanne-plugins",
+  "owner": {
+    "name": "Giovanne Mendonca",
+    "email": "giovannemendonca@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "commit-helper",
+      "source": "./plugins/commit-helper",
+      "description": "Skills para ajudar a escrever mensagens de commit consistentes."
+    }
+  ]
+}
